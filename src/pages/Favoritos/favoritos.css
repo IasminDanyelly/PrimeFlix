@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap"); /*Do titulo*/
+
+.meus-filmes {
+  margin: 20px;
+  padding: 25px;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.meus-filmes h1 {
+  font-family: "Smooch Sans", sans-serif;
+  
+}
+
+.meus-filmes ul{
+    width: 720px;
+   
+}
+
+.meus-filmes ul li{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 5px 0;
+    
+}
+
+.meus-filmes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meus-filmes div a{
+    text-decoration:none;
+    color:#000;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.meus-filmes div a:hover{
+    color:#565656;
+}

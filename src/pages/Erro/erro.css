@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Smooch+Sans:wght@200&display=swap');
+.erro{
+    margin: 105px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0c0c0c;
+}
+.erro h1{
+    font-size: 50px;
+}
+.erro a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-family: 'Raleway', sans-serif;
+}
+

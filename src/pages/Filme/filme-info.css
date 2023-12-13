@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');/*Do titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Smooch+Sans:wght@200&display=swap'); /*Do link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital@1&family=Smooch+Sans:wght@200&display=swap'); /*Da avaliação*/
+
+.carregando{ 
+    text-align: center;
+    align-items: center;
+    margin: 30px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: none;
+}
+
+.filme-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px; 
+}
+
+.filme-info h1{
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.filme-info img{
+    width: 600px; 
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 #0c0c0c;
+    margin: auto;
+}
+
+.filme-info h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.filme-info span{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 700px;
+    margin: auto;
+}
+
+.filme-info strong{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.area-botoes button{
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0c0c0c;
+   
+}
+
+.area-botoes button a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+.area-botoes button:hover{
+    background-color: #898989;
+    transition:  0.5s;
+}
