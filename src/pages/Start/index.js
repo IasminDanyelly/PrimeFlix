@@ -1,5 +1,5 @@
 import React from 'react';
-import FamiliaAssistindo from './familia-assistindo.jpg'
+import FamiliaAssistindo from './familia-assistindo.jpg';
 import './start.css';
 function Start(){
     return(

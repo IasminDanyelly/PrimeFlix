@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { CiHeart } from "react-icons/ci";
-import { FaHeart } from "react-icons/fa";
 import api from "../../services/api";
 import "./home.css";
-import {toast} from 'react-toastify'
+import {toast} from 'react-toastify';
 
 // URL DA API: '/movie/now_playing?api_key=da5f887279abe005361ccc3117b865e5&language=pt-BR'
 

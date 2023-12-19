@@ -18,6 +18,7 @@ function RouteApp(){
      
         <Header/>
        <Routes>
+
         <Route path='/' element={<Start/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/filme/:id" element={<Filme/>}/>
