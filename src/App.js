@@ -8,9 +8,6 @@ function App() {
     <div className="App">
       <ToastContainer/>
         <RouteApp/>
-     
-       
-       
     </div>
   );
 }

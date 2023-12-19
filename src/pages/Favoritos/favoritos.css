@@ -45,3 +45,12 @@
 .meus-filmes div a:hover{
     color:#565656;
 }
+
+.excluir{
+    cursor: pointer;
+    
+}
+
+.excluir:active{
+    color: #565656;
+}

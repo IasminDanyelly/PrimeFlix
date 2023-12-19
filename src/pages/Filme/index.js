@@ -1,7 +1,6 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import './filme-info.css'
-
 import api from '../../services/api'
 import { toast } from 'react-toastify';
 
@@ -41,30 +40,23 @@ function Filme(){
      },[navigate, id])
 
 
-      function salvarFilmeFavorito(filme) {
-        const minhaLista = localStorage.getItem("@meus-filmes");
-        let filmesSalvos = JSON.parse(minhaLista) || [];
-      
-        const filmeExistente = filmesSalvos.find((filmeSalvo) => filmeSalvo.id === filme.id);
-      
-        if (filmeExistente) {
-          return { success: false, message: 'Este filme já está salvo!' };
-        }
-      
-        filmesSalvos.push(filme);
-        localStorage.setItem("@meus-filmes", JSON.stringify(filmesSalvos));
-        return { success: true, message: 'Filme salvo nos favoritos!' };
-      }
 
-      
-     const salvarFilme = (filme) => {
-          const resultado = salvarFilmeFavorito(filme)
-          if(resultado.success){
-                 toast.success(resultado.message)
-          }else{
-            toast.warning(resultado.message)
-          }
+     function salvarFilme(){
+         const minhaLista = localStorage.getItem('@primeflix');
+         let filmesSalvos = JSON.parse(minhaLista) || [];
+
+         let hasFilmes = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id);
+
+         if(hasFilmes){
+          toast.warning('Este filme já está salvo!');
+          return;
+         }
+
+         filmesSalvos.push(filme);
+         localStorage.setItem('@primeflix', JSON.stringify(filmesSalvos));
+         toast.success('Adicionado a Meus filmes')
      }
+      
 
 
      if(loading){
