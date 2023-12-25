@@ -10,6 +10,8 @@ function Favoritos() {
   useEffect(() => {
     const minhaLista = localStorage.getItem("@primeflix");
     setFilmes(JSON.parse(minhaLista) || []);
+
+  
   }, []);
 
 

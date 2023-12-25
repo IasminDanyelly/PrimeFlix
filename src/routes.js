@@ -1,27 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 
 import Home from './pages/Home';
 import Filme from './pages/Filme';
 import Favoritos from './pages/Favoritos';
-import Erro from './pages/Erro';
 import Start from './pages/Start';
+import Erro from './pages/Erro';
+
+
 
 import Header from './components/Header';
 
 
 function RouteApp(){
+    
+
     return(
        <BrowserRouter>
-       
-      
-       
-     
+    
         <Header/>
-       <Routes>
-
-        <Route path='/' element={<Start/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/filme/:id" element={<Filme/>}/>
+        <Routes>
+        <Route path="/" element={<Start setAparecer={setAparecer}/>}/>
+        <Route path="/home" element={<Home setAparecer={setAparecer}/>}/>
+        <Route path="/filme/:id" element={<Filme setAparecer={setAparecer}/>}/>
         <Route path="/favoritos" element={<Favoritos/>}/>
        
 

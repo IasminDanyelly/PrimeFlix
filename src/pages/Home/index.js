@@ -10,7 +10,7 @@ function Home() {
   const [filmes, setFilmes] = useState([]);
   const [loading, setLoading] = useState(true);
   
-
+    
   useEffect(() => {
     async function loadApi() {
       const response = await api.get("movie/now_playing", {
@@ -23,7 +23,11 @@ function Home() {
       setFilmes(response.data.results.slice(0, 20));
       console.log(response.data.results.slice(0, 20));
       setLoading(false);
+
+    
     }
+
+  
 
     loadApi();
   }, []);
