@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <div className="cabecalho">
-        <Link to="/home" className="logo">
+        <Link to="/" className="logo">
           Prime Flix
         </Link>
         <Link to="/favoritos" className="favoritos">
