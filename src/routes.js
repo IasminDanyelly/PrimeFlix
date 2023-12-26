@@ -18,7 +18,7 @@ function RouteApp(){
     
         <Header/>
         <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/filme/:id" element={<Filme/>}/>
         <Route path="/favoritos" element={<Favoritos/>}/>
     
