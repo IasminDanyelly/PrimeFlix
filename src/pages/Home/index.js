@@ -23,11 +23,9 @@ function Home() {
       setFilmes(response.data.results.slice(0, 20));
       console.log(response.data.results.slice(0, 20));
       setLoading(false);
-
-    
     }
 
-  
+  a
 
     loadApi();
   }, []);
