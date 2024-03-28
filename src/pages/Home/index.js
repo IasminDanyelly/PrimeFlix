@@ -25,7 +25,6 @@ function Home() {
       setLoading(false);
     }
 
-  a
 
     loadApi();
   }, []);

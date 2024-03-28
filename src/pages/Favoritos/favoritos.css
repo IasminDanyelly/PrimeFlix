@@ -1,56 +1,141 @@
-@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap"); /*Do titulo*/
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap");
+/*Do titulo*/
 
 .meus-filmes {
-  margin: 20px;
-  padding: 25px;
-  font-size: 18px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  
+    margin: 20px;
+    padding: 25px;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .meus-filmes h1 {
-  font-family: "Smooch Sans", sans-serif;
-  
+    font-family: "Smooch Sans", sans-serif;
+
 }
 
-.meus-filmes ul{
+.meus-filmes ul {
     width: 720px;
-   
+
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     justify-content: space-between;
     align-items: center;
     display: flex;
     padding: 5px 0;
-    
+
 }
 
-.meus-filmes div{
+.meus-filmes div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.meus-filmes div a{
-    text-decoration:none;
-    color:#000;
+.meus-filmes div a {
+    text-decoration: none;
+    color: #628a6d;
+    font-weight:bold;
     margin-right: 15px;
     cursor: pointer;
 }
 
-.meus-filmes div a:hover{
-    color:#565656;
+.meus-filmes div a:hover {
+    color: #84b192;
 }
 
-.excluir{
+.excluir {
     cursor: pointer;
-    
+    color: #303030;
 }
 
-.excluir:active{
-    color: #565656
+
+.excluir:active {
+    color: #565656;
+}
+
+@media screen  and (max-width: 768px){
+    .meus-filmes ul {
+        width: 620px;
+    }
+}
+
+@media screen  and (max-width: 425px){
+    .meus-filmes {
+        margin:auto;
+        padding: 5px;
+        font-size: 18px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 90px;
+        margin-top: 10px;
+    
+    }
+    .meus-filmes ul {
+        width:400px;
+    
+    }
+
+
+    .meus-filmes ul span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 160px;
+     }
+}
+
+@media screen and (max-width: 375px){
+    .meus-filmes {
+        margin-left: 0px;
+        margin-top: 10px;
+    
+    }
+
+    .meus-filmes ul {
+        width:330px;
+    
+    }
+
+    .meus-filmes div a {
+        font-size:16px;
+     }
+ 
+     .meus-filmes ul span {
+        font-size: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 130px;
+     }
+}
+
+@media screen and (max-width:320px) {
+    .meus-filmes{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+    .meus-filmes h1{
+       font-size: 30px;
+    }
+    .meus-filmes ul {
+        width:300px;
+    }
+
+
+    .meus-filmes div a {
+       font-size:14px;
+    }
+
+    .meus-filmes ul span {
+       font-size: 14px;
+    
+    }
 }

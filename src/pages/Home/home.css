@@ -1,39 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');/*Do titulo*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Smooch+Sans:wght@200&display=swap'); /*Do link*/
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+/*Do titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Smooch+Sans:wght@200&display=swap');
+/*Do link*/
 
-.container{
+.container {
     margin-right: 0;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 25px 0 20px 0;
-    
+
 }
 
-.loading{
+.loading {
     text-align: center;
     align-items: center;
     margin: 30px 0;
 }
 
-.lista-filmes{
+.lista-filmes {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 100%;
     gap: 10px;
-    margin:auto;   
+    margin: auto;
 }
 
-.lista-filmes article{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding:10px;
-   
+.lista-filmes article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-.titulo__filme{
+.titulo__filme {
     user-select: none;
     overflow: hidden;
     white-space: nowrap;
@@ -48,15 +49,15 @@
 
 
 
-.lista-filmes img{
-   user-select: none;
-   width: 270px;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 10px;
+.lista-filmes img {
+    user-select: none;
+    width: 270px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.link__filme{
+.link__filme {
     user-select: none;
     text-align: left;
     text-decoration: none;
@@ -69,28 +70,110 @@
     cursor: pointer;
 }
 
-.link__filme:hover{
+.link__filme:hover {
     color: #4f4f4f;
     border-bottom: 1px solid #4f4f4f;
-    transition:  all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-.link-container{
+.link-container {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
 
-.salvar {
-    cursor: pointer;
-    margin-top: 7.5px;
-    padding-left: 15px;
-    font-weight: 600;
-    color:#0c0c0c ;
-    font-size: 30px;
+
+
+
+
+@media  screen and (max-width:1024px){
+    .container {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px 0 20px 0;
     
+    }
+    
+    .lista-filmes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        gap: 10px;
+        margin: auto;
+       
+    }
+
+   
 }
 
 
+@media screen and (max-width: 768px){
+    .lista-filmes{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
+@media screen and (max-width: 425px){
+    .container {
+
+        margin: 25px 0 10px 0;
+    
+    }
+    
+    .lista-filmes article {
+        padding: 0;
+        margin:0;
+    }
+    
+    .loading {
+        text-align: center;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .lista-filmes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+ 
+       
+    }
+
+    .lista-filmes img {
+        user-select: none;
+        width: 230px;
+        height: 100%;
+        padding: 0;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    .titulo__filme {
+        font-size: 22px;
+        text-align: center;
+
+    }
+
+    .link__filme {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    .lista-filmes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+ 
+       
+    }
+
+    .link__filme {
+        margin-bottom: 10px;
+    }
+}
